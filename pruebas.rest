@@ -1,0 +1,44 @@
+### Recoger todas las bandas
+GET http://localhost:3000/api/all
+
+### Recoger detalles de una banda por ID
+GET http://localhost:3000/api/detalles/2
+Content-Type: application/json
+
+### Editar una banda existente
+POST http://localhost:3000/api/editar/1
+Content-Type: application/json
+
+{
+    "nombre_banda": "Queen",
+    "historia": "historia editada",
+    "urlVideo": "https://www.youtube.com/watch?v=ZvR-L9IsH9M&list=PLcpibJJgcYVATdXwCxVm7Oqe-cP3rTx--&index=20",
+    "urlWeb": "https://www.youtube.com/watch?v=ZvR-L9IsH9M&list=PLcpibJJgcYVATdXwCxVm7Oqe-cP3rTx--&index=20",
+    "urlSpotify": "https://www.youtube.com/watch?v=ZvR-L9IsH9M&list=PLcpibJJgcYVATdXwCxVm7Oqe-cP3rTx--&index=20"
+}
+
+### Eliminar banda
+DELETE http://localhost:3000/api/borrar/3
+
+
+### Buscar banda por nombre
+GET http://localhost:3000/api/buscar/in
+Content-Type: application/json
+
+
+### Crear banda
+POST http://localhost:3000/api/crearbanda
+Content-Type: application/json
+
+{   
+    "idbanda": null,
+    "nombre_banda": "Deep Purple",
+    "genero": "Heavy",
+    "historia": "historia editada",
+    "urlVideo": "https://www.youtube.com/watch?v=ZvR-L9IsH9M&list=PLcpibJJgcYVATdXwCxVm7Oqe-cP3rTx--&index=20",
+    "urlWeb": "https://www.youtube.com/watch?v=ZvR-L9IsH9M&list=PLcpibJJgcYVATdXwCxVm7Oqe-cP3rTx--&index=20",
+    "urlSpotify": "https://www.youtube.com/watch?v=ZvR-L9IsH9M&list=PLcpibJJgcYVATdXwCxVm7Oqe-cP3rTx--&index=20"
+}
+
+###
+GET http://localhost:3000/api/token
